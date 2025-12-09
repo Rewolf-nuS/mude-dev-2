@@ -1,0 +1,29 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+
+import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
+import { ClientRouter } from "astro:transitions";
+
+const {
+  image,
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION,
+  ogType,
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="ja" data-theme="nord">
+  <BaseHead
+    title={title}
+    description={description}
+    image={image}
+    ogType={ogType}
+  />
+  <ClientRouter />
+  <body>
+    <Header />
+    <slot />
+  </body>
+</html>

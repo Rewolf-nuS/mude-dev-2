@@ -21,7 +21,16 @@ import ThemeToggle from "./ThemeToggle.astro";
           </label>
         </div>
         <!-- Items -->
-        <h1 class="mx-2 flex-1 px-2"><a href="/">mude-dev</a></h1>
+        <h1 class="mx-2 flex-1 px-2 font-bold">
+          <a href="/">
+            <img
+              src="/mude_logo.webp"
+              alt="mude-dev logo"
+              class="w-8 h-8 inline-block"
+            />
+            mude-dev
+          </a>
+        </h1>
         <div class="hidden flex-none lg:block">
           <ul class="menu menu-horizontal items-center">
             <PageLinks />
@@ -38,6 +47,11 @@ import ThemeToggle from "./ThemeToggle.astro";
         aria-label="close sidebar"
         class="drawer-overlay"></label>
       <ul class="menu bg-base-100 min-h-full w-3/4 max-w-xs p-4">
+        <img
+          src="/mude_logo.webp"
+          alt="mude-dev logo"
+          class="w-1/5 h-1/5 mb-5"
+        />
         <PageLinks />
       </ul>
     </nav>

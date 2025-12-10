@@ -2,3 +2,11 @@
 @plugin "daisyui" {
   themes: nord --default, dim --prefersdark;
 }
+
+.site-logo {
+  @apply invert-0;
+}
+:root:has(input.theme-controller[value="nord"]:checked),
+[data-theme="nord"] .site-logo {
+  @apply invert;
+}

@@ -4,7 +4,7 @@ import PageLinks from "./PageLinks.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 ---
 
-<header class="sticky top-0 bg-base-300">
+<header class="sticky top-0 bg-base-300 z-10">
   <div class="drawer">
     <input id="mobile_drawer" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
@@ -22,9 +22,7 @@ import ThemeToggle from "./ThemeToggle.astro";
         </div>
         <!-- Items -->
         <h1 class="mx-2 flex-1 px-2 font-bold">
-          <a href="/">
-            mude-dev
-          </a>
+          <a href="/"> mude-dev </a>
         </h1>
         <div class="hidden flex-none lg:block">
           <ul class="menu menu-horizontal items-center">
